@@ -1,103 +1,75 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google web font loader &&  -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script> -->
-
-    <!-- Jquery CDN -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-
-    <!-- Slick CDN -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    
-    <title>JIEUM</title>
+  <meta charset="UTF-8">
+  <title>CodePen - Slice Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:700|Space+Mono'><link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>JIEUM</h1>
-    </div>
-    <div class="background">
-        <div class="slider slider-nav">
+  <!-- partial:index.partial.html -->
+  <main>
+  <section class="slides"> 
+    
+    <section class="slides-nav">
+      <nav class="slides-nav__nav">
+        <button class="slides-nav__prev js-prev">Prev</button>
+        <button class="slides-nav__next js-next">Next</button>
+      </nav>
+    </section>
 
-            <div class="itm">
-                <div class="txt__Box">
-                    <span class="txt__Title">BANNER PANNEL</span>
-                    <p class="txt__Info">
-                        Hello This Is A Test
-                    </p>
-                    <a class="txt__mre--Info">MORE</a>
-                </div>
-                <img class="itm__Img" src="circle.png">
-            </div>
-            
-            <div class="itm">
-                <div class="txt__Box">
-                    <span class="txt__Title">BANNER PANNEL</span>
-                    <p class="txt__Info">
-                        Hello This Is A Test
-                    </p>
-                    <a class="txt__mre--Info">MORE</a>
-                </div>
-                <img class="itm__Img" src="circle.png">
-            </div>
+    <section class="slide is-active">
+      <div class="slide__content">
+        <figure class="slide__figure"><div class="slide__img" style="background-image: url(https://source.unsplash.com/nfTA8pdaq9A/2000x1100)"></div></figure>
+        <header class="slide__header">
+          <h2 class="slide__title">
+            <span class="title-line"><span>Click, Key</span></span>
+            <span class="title-line"><span>Or Scroll Fool</span></span>
+          </h2>
+        </header>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide__content">
+        <figure class="slide__figure"><div class="slide__img" style="background-image: url(https://source.unsplash.com/okmtVMuBzkQ/2000x1100)"></div></figure>
+        <header class="slide__header">
+          <h2 class="slide__title">
+            <span class="title-line"><span>Slide Two</span></span>
+            <span class="title-line"><span>Dood Mood</span></span>
+          </h2>
+        </header>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide__content">
+        <figure class="slide__figure"><div class="slide__img" style="background-image: url(https://source.unsplash.com/WuQME0I_oZA/2000x1100)"></div></figure>
+        <header class="slide__header">
+          <h2 class="slide__title">
+            <span class="title-line"><span>This Right</span></span>
+            <span class="title-line"><span>Here Makes Three</span></span>
+          </h2>
+        </header>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div class="slide__content">
+        <figure class="slide__figure"><div class="slide__img" style="background-image: url(https://source.unsplash.com/NsWcRlBT_74/2000x1100)"></div></figure>
+        <header class="slide__header">
+          <h2 class="slide__title">
+            <span class="title-line"><span>How Now</span></span>
+            <span class="title-line"><span>Part Four More</span></span>
+          </h2>
+        </header>
+      </div>
+    </section>
     
-            <div class="itm">
-                <div class="txt__Box">
-                    <span class="txt__Title">BANNER PANNEL</span>
-                    <p class="txt__Info">
-                        Hello This Is A Test
-                    </p>
-                    <a class="txt__mre--Info">MORE</a>
-                </div>
-                <img class="itm__Img" src="circle.png">
-            </div>
-    
-            <div class="itm">
-                <div class="txt__Box">
-                    <span class="txt__Title">BANNER PANNEL</span>
-                    <p class="txt__Info">
-                        Hello This Is A Test
-                    </p>
-                    <a class="txt__mre--Info">MORE</a>
-                </div>
-                <img class="itm__Img" src="circle.png">
-            </div>
-    
-            <div class="itm">
-                <div class="txt__Box">
-                    <span class="txt__Title">BANNER PANNEL</span>
-                    <p class="txt__Info">
-                        Hello This Is A Test
-                    </p>
-                    <a class="txt__mre--Info">MORE</a>
-                </div>
-                <img class="itm__Img" src="circle.png">
-            </div>
-    
-            <div class="itm">
-                <div class="txt__Box">
-                    <span class="txt__Title">BANNER PANNEL</span>
-                    <p class="txt__Info">
-                        Hello This Is A Test
-                    </p>
-                    <a class="txt__mre--Info">MORE</a>
-                </div>
-                <img class="itm__Img" src="circle.png">
-            </div>
-    
-        </div>
-        
-    </div>
-    
-    
-    <div class="footer"></div>
-    <script src="script.js"></script>
+  </section>
+  </main>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
