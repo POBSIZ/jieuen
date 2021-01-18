@@ -21,12 +21,21 @@
     font-style: normal;
 }
 
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.nanummyeongjo * {
+ font-family: 'Nanum Myeongjo', serif;
+}
+
+
 *{
     outline: none;
     overflow: visible !important;
-    font-family: 'humanp', serif;
-    /* font-family: 'Iropke Batang', serif; */
     font-weight: 400;
+
+    font-family: 'Nanum Myeongjo', serif;
+    /* font-family: 'humanp', serif; */
+    /* font-family: 'Iropke Batang', serif; */
     /* font-family: 'HSBombaram', serif; */
     /* font-family: 'Nanum Myeongjo', serif; */
 }
