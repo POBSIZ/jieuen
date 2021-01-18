@@ -172,8 +172,9 @@ body {
   position: relative;
   display: block;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: center;
   -webkit-backface-visibility: hidden;
   height: 0%;
   width: 100%;
