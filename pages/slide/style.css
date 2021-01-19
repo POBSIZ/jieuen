@@ -67,10 +67,10 @@ h1{
 .txtdsa{
     position: absolute;
     display: block;
-    width: 300px;
+    width: 800px;
     height: 20px;
-    left: 50%;
-    transform: translateX(-80%);
+    left: 70%;
+    transform: translateX(-50%);
     margin-top: 100px;
     font-size: 30px;
     font-weight: bold;
@@ -133,6 +133,7 @@ h1{
     background-size: cover;
     background: url('../../src/paperbg.png');
     overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
 
 .slick-dots {
@@ -142,9 +143,12 @@ h1{
 }
 
 .txt__Box{
-    display: inline-block;
-    margin-top: 300px;
+    position: relative;
+    display: block;
     line-height: 30px;
+    width: 500px;
+    margin: auto;
+    margin-top: 230px;
 }
 
 .txt__Title{
