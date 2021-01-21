@@ -1,6 +1,6 @@
 *{
     outline: none;
-    overflow: visible !important;
+    /* overflow: visible !important; */
     font-weight: 400;
 
     font-family: 'Nanum Myeongjo', serif;
