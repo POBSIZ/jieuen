@@ -18,13 +18,14 @@ a{
 
 .container{
     position: absolute;
-    width: 200px;
+    width: 350px;
     height: 800px;
     overflow: hidden !important;
 }
 
 @media screen and (min-width: 360px){
     body{
+        height: 100%;
         margin: 0;
         padding: 0;
         overflow: hidden !important;
