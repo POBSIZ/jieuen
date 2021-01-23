@@ -8,28 +8,12 @@ $('.slider-nav').slick({
   autoplaySpeed: 2000,
 });
 
-// $('.slider-nav').slick({
-//   centerMode: true,
-//   centerPadding: '60px',
-//   slidesToShow: 1,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         arrows: true,
-//         centerMode: true,
-//         centerPadding: '40px',
-//         slidesToShow: 3
-//       }
-//     },
-//     {
-//       breakpoint: 480,
-//       settings: {
-//         arrows: true,
-//         centerMode: true,
-//         centerPadding: '100px',
-//         slidesToShow: 3
-//       }
-//     }
-//   ]
-// });
+// var parseData = JSON.parse(JSON.stringify(Params));
+
+
+jQuery(document).ready(function($){
+  $("li.content").hide();
+  $("ul.toggle-menu").delegate("li.toggle", "click", function() { 
+  $(this).next().toggle("fast").siblings(".content").hide("fast");
+    });
+});

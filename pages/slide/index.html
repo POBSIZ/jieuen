@@ -10,7 +10,11 @@
 
     <!-- Jquery CDN -->
     <!-- <script defer src="http://code.jquery.com/jquery-latest.js"></script> -->
-    <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+    <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script defer src="./script.js"></script>
+
+    <!-- 서버실행없이 외부제이슨 파일 읽기 위해 -->
+    <script type="text/javascript" src="./data.json"></script>
 
     <!-- Slick CDN -->
     <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
@@ -24,8 +28,26 @@
     <div class="container">
         <div class="header">
             <a href="../../index.html">
-                <h1>지은</h1>
+                <h1 class="h1_title">지은</h1>
             </a>
+
+            <div class="menu-links">
+                <ul class="toggle-menu">
+                  <li class="toggle">
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                    <span class="toggle-menu-bar"></span>
+                  </li>
+                    
+                  <li class="content" style="display: none;">
+                    <ul>
+                      <li><a href="#">Link 1</a></li>
+                      <li><a href="#">Link 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
         </div>
         
         <div class="background">
