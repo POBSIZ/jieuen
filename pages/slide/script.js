@@ -1,11 +1,8 @@
-var parseData = JSON.parse(JSON.stringify(test));
-var h1t = document.getElementsByClassName('h1_title')[0];
-
+var wid = document.getElementById('w1');
 window.onload = () =>{
   for(var i=0; i < 3; i++){
-
+    wid.innerHTML = test.w1.name;
   }
-  console.log(parseData.info);
 }
 
 
