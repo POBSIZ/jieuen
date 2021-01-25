@@ -1,3 +1,14 @@
+var parseData = JSON.parse(JSON.stringify(test));
+var h1t = document.getElementsByClassName('h1_title')[0];
+
+window.onload = () =>{
+  for(var i=0; i < 3; i++){
+
+  }
+  console.log(parseData.info);
+}
+
+
 // set Slick Slider
 $('.slider-nav').slick({
   slidesToShow: 1,
@@ -7,8 +18,6 @@ $('.slider-nav').slick({
   autoplay: false,
   autoplaySpeed: 2000,
 });
-
-// var parseData = JSON.parse(JSON.stringify(Params));
 
 
 jQuery(document).ready(function($){
