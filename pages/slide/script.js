@@ -2,8 +2,8 @@ var wid_text = document.getElementById('w1_text');
 var wid_title = document.getElementById('w1_title');
 window.onload = () =>{
   for(var i=0; i < 3; i++){
-    // wid_title.innerHTML = test.w2.title;
-    // wid_text.innerHTML = test.w2.text;
+    wid_title.innerHTML = test.w2.title;
+    wid_text.innerHTML = test.w3.text;
   }
 }
 
