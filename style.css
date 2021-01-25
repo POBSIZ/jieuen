@@ -236,3 +236,28 @@ body {
   width: 100px;
   height: 100px;
 }
+
+
+.texture__wrap{
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-left: 210px;
+  margin-top: 435px;
+}
+.texture__btn{
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  background-color: black;
+  z-index: 100;
+  margin: auto;
+  opacity: 0%;
+  margin-left: 135px;
+}
+.texture__btn:nth-child(1){
+  margin-left: 0;
+}
