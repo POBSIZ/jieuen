@@ -1,7 +1,9 @@
-var wid = document.getElementById('w1');
+var wid_text = document.getElementById('w1_text');
+var wid_title = document.getElementById('w1_title');
 window.onload = () =>{
   for(var i=0; i < 3; i++){
-    wid.innerHTML = test.w1.name;
+    wid_title.innerHTML = test.w1.title;
+    wid_text.innerHTML = test.w1.text;
   }
 }
 
