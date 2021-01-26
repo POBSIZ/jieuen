@@ -12,6 +12,7 @@ body {
   height: 100%;
   color: #111;
 }
+
 @media (min-width: 54em) {
   .slides-nav {
     right: 2%;
@@ -129,6 +130,8 @@ body {
   .slide__title {
     font-size: 5em;
   }
+
+
 }
 .slide__title .title-line {
   display: block;
@@ -182,7 +185,7 @@ body {
     width: 100%;
     filter: grayscale(0%);
     transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
-  }  
+  }
 }
 
 @media screen and (min-width: 1280px){
