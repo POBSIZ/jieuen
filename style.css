@@ -255,23 +255,21 @@ body {
 
 
 .texture__wrap{
-  position: absolute;
-  width: 100%;
+  /* position: absolute; */
   display: block;
-  margin: auto;
-  margin-left: 210px;
-  margin-top: 435px;
 }
 .texture__btn{
   cursor: pointer;
-  position: relative;
-  /* display: inline-block;   */
-  display: none;
-  width: 10%;
-  height: 5%;
+  position: absolute;
+  display: block;  
   background-color: black;
+  width: 230px;
+  height: 160px;
   z-index: 100;
-  margin: auto;
   opacity: 0%;
-  margin-left: 1%;
-}.texture__btn:nth-child(1){margin-left: 0;}
+
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+}
+/* .texture__btn:nth-child(1){margin-left: 0;} */
