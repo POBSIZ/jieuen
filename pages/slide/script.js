@@ -1,6 +1,6 @@
 window.onload = () =>{
 
-  if(window.innerWidth < 500){
+  if(window.innerWidth < 600){
 
     for(var i=0; i < 5; i++){
       document.getElementsByClassName('txt__title')[i].innerHTML = test.w3.title;
