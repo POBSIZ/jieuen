@@ -1,12 +1,28 @@
-var wid_text = document.getElementById('w1_text');
-var wid_title = document.getElementById('w1_title');
 window.onload = () =>{
-  for(var i=0; i < 5; i++){
-    document.getElementsByClassName('txt__title')[i].innerHTML = test.w2.title;
-    document.getElementsByClassName('txt__Box')[i].innerHTML = test.w2.text;
-  }
-}
 
+  if(window.innerWidth < 390){
+
+    for(var i=0; i < 5; i++){
+      document.getElementsByClassName('txt__title')[i].innerHTML = test.w3.title;
+      document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
+    }
+    
+  }else{
+
+    for(var i=0; i < 5; i++){
+      document.getElementsByClassName('txt__title')[i].innerHTML = test.w2.title;
+      document.getElementsByClassName('txt__Box')[i].innerHTML = test.w2.text;
+    }
+
+  }
+
+};
+
+window.onchange = () => {
+  if(window.innerWidth > 360){
+    document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
+  }
+};
 
 // set Slick Slider
 $('.slider-nav').slick({
