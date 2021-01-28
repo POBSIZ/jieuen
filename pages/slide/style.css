@@ -82,9 +82,7 @@ a:hover {
     
     .background{
         position: relative;
-        /* background: url('./BG.jpg'); */
         background-size: cover;
-        /* background-color: #ffffff; */
         width: 100%;
         height: 800px;
     }
@@ -105,9 +103,23 @@ a:hover {
         width: 350px;
         height: 90%;
         background-size: cover;
-        background: url('../../src/paperbg.png');
+        background: url('../../src/paper.png');
         overflow-y: auto !important;
         overflow-x: hidden !important;
+        z-index: 100;
+    }
+
+    .itm__shadow{
+        position: absolute;
+        width: 350px;
+        height: 90%;
+        background-color: #000000;
+        top: 8px;
+        left: 50.9%;
+        transform: translateX(-50%);
+        z-index: 0;
+        opacity: 40%;
+        filter: blur(10px);
     }
     
     .slick-dots {
@@ -186,31 +198,23 @@ a:hover {
     .header{
         position: relative;
         display: inline-block;
-        /* background-color: black; */
         width: 100%;
         height: 8%;
-        /* color: #ffffff; */
-        /* color: #000000; */
         text-shadow: 2px 2px 3px #18181857;
     }
     
     .background{
         position: relative;
-        /* background: url('./BG.jpg'); */
         background-size: cover;
-        /* background-color: #ffffff; */
         width: 100%;
         height: 800px;
     }
     
     .footer{
         position: relative;
-        /* background-color: black; */
         width: 100%;
         height: 50px;
     }
-    
-    .slider {}
     
     .itm__wrapper{
         display: inline;

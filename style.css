@@ -6,18 +6,13 @@ body {
 .slides-nav {
   z-index: 99;
   position: fixed;
-  right: -5%;
+  right: -2%;
   display: flex;
   align-items: center;
   height: 100%;
   color: #111;
 }
 
-@media (min-width: 54em) {
-  .slides-nav {
-    right: 2%;
-  }
-}
 .slides-nav__nav {
   position: relative;
   right: 0;
@@ -31,10 +26,6 @@ body {
   display: inline-block;
   padding: 0.35em;
   margin: 0;
-  font-family: "Space Mono", monospace;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   background: transparent;
   border: 0;
   overflow-x: hidden;
@@ -98,13 +89,7 @@ body {
   width: 95%;
   top: 2.5%;
 }
-@media (min-width: 54em) {
-  .slide__content {
-    height: 80%;
-    width: 80%;
-    top: 10%;
-  }
-}
+
 .slide__header {
   z-index: 9;
   position: relative;
@@ -114,25 +99,14 @@ body {
   overflow-y: hidden;
   transform: translateX(5%);
 }
-@media (min-width: 54em) {
-  .slide__header {
-    transform: translateX(-5%);
-  }
-}
+
 .slide__title {
-  font-family: Montserrat, helvetica;
   font-size: 2.5em;
   font-weight: 700;
   color: #111;
   overflow-y: hidden;
 }
-@media (min-width: 54em) {
-  .slide__title {
-    font-size: 5em;
-  }
 
-
-}
 .slide__title .title-line {
   display: block;
   overflow-y: hidden;
@@ -176,45 +150,8 @@ body {
   background: url('./src/poster_texture.png') !important;
 }
 
-@media screen and (min-width: 375px){
-  .slide__img {
-    position: relative;
-    display: block;
-    background-size: 250%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    -webkit-backface-visibility: hidden;
-    height: 0%;
-    width: 100%;
-    filter: grayscale(0%);
-    transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
-  }   
-
-  .slide__figure .slide__img:nth-child(3){
-    background: url('./src/poster_texture_mobile.png') !important;
-  }
-}
-
-@media screen and (min-width: 1280px){
-  .slide__img {
-    position: relative;
-    display: block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    -webkit-backface-visibility: hidden;
-    height: 0%;
-    width: 100%;
-    filter: grayscale(0%);
-    transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
-  }  
-
-
-  .slide__figure .slide__img:nth-child(3){
-    background: url('./src/poster_texture.png') !important;
-  }
+.slide__figure .slide__img:nth-child(3){
+  background: url('./src/poster_texture.png') !important;
 }
 
 .is-active .slide__img {
@@ -236,7 +173,6 @@ body {
 }
 
 .texture__wrap{
-  /* position: absolute; */
   display: block;
 }
 .texture__btn{
@@ -253,4 +189,81 @@ body {
   transform: translateX(-50%);
   top: 50%;
 }
-/* .texture__btn:nth-child(1){margin-left: 0;} */
+
+@media (min-width: 54em) {
+  .slides-nav {
+    right: 2%;
+  }
+}
+
+@media (min-width: 54em) {
+  .slide__title {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 54em) {
+  .slide__header {
+    transform: translateX(-5%);
+  }
+}
+
+@media (min-width: 54em) {
+  .slide__content {
+    height: 80%;
+    width: 80%;
+    top: 10%;
+  }
+}
+
+@media screen and (min-width: 375px){
+  .slide__img {
+    position: relative;
+    display: block;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-backface-visibility: hidden;
+    height: 0%;
+    width: 100%;
+    filter: grayscale(0%);
+    transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
+  }   
+
+  .slide__figure .slide__img:nth-child(3){
+    background: url('./src/poster_texture_mobile.png') !important;
+  }
+}
+
+@media screen and (min-width: 860px){
+  .slide__img {
+    position: relative;
+    display: block;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-backface-visibility: hidden;
+    height: 0%;
+    width: 100%;
+    filter: grayscale(0%);
+    transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
+  }  
+}
+
+@media screen and (min-width: 1280px){
+  .slide__img {
+    position: relative;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-backface-visibility: hidden;
+    height: 0%;
+    width: 100%;
+    filter: grayscale(0%);
+    transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
+  }  
+}
