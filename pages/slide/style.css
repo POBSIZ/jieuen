@@ -28,6 +28,50 @@ a:hover {
     background-repeat: no-repeat !important;
 }
 
+.menu-links {
+    float: right;  
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.toggle-menu {
+    float: right; 
+}
+
+.toggle-menu li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    text-align: left;
+}
+
+.toggle {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+li.toggle:hover span.toggle-menu-bar {
+    background-color: dimgray;
+}
+
+.toggle-menu-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 auto 3px;
+    transition: background-color 0.2s;
+}
+
+
+pre{
+    margin: 0;
+    padding: 0;
+}
+
 @media screen and (min-width: 360px){
     body{
         margin: 0;
@@ -72,11 +116,8 @@ a:hover {
     
     .header{
         position: relative;
-        /* background-color: black; */
         width: 100%;
         height: 80px;
-        /* color: #ffffff; */
-        /* color: #000000; */
         text-shadow: 2px 2px 3px #18181857;
     }
     
@@ -140,7 +181,6 @@ a:hover {
     }
 
 }
-
 
 @media screen and (min-width: 1280px){
     body{
@@ -233,11 +273,24 @@ a:hover {
         height: 100%;
         overflow-y: auto !important;
         overflow-x: hidden !important;
-        background: url('../../src/paperbg.png');
+        background: url('../../src/paper.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
     
+    .itm__shadow{
+        position: absolute;
+        width: 1100px;
+        height: 100%;
+        background-color: #000000;
+        top: 8px;
+        left: 50.9%;
+        transform: translateX(-50%);
+        z-index: 0;
+        opacity: 40%;
+        filter: blur(10px);
+    }
+
     .slick-dots {
         top: 750px;
         position: relative;
@@ -246,46 +299,3 @@ a:hover {
 
 }
 
-.menu-links {
-    float: right;  
-    padding-right: 20px;
-    margin-top: 20px;
-}
-
-.toggle-menu {
-    float: right; 
-}
-
-.toggle-menu li {
-    display: block;
-    float: left;
-    list-style-type: none;
-    text-align: left;
-}
-
-.toggle {
-    padding-top: 5px;
-    cursor: pointer;
-}
-
-li.toggle:hover span.toggle-menu-bar {
-    background-color: dimgray;
-}
-
-.toggle-menu-bar {
-    display: block;
-    width: 25px;
-    height: 4px;
-    background-color: black;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    margin: 0 auto 3px;
-    transition: background-color 0.2s;
-}
-
-
-pre{
-    margin: 0;
-    padding: 0;
-}
