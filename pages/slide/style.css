@@ -1,9 +1,18 @@
 *{
     outline: none;
     font-weight: 400;
-
     font-family: 'Nanum Myeongjo', serif;
 }
+ 
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+    touch-action:none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar { display: none; }
 
 a {
     font-size: 25px;
@@ -70,15 +79,11 @@ li.toggle:hover span.toggle-menu-bar {
 pre{
     margin: 0;
     padding: 0;
+    word-break:keep-all;
+    white-space: pre-wrap; 
 }
 
 @media screen and (min-width: 360px){
-    body{
-        margin: 0;
-        padding: 0;
-        overflow: hidden !important;
-        touch-action:none;
-    }
     
     .h1_title{
         position: relative;
@@ -135,6 +140,7 @@ pre{
         height: 800px;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 20px;
     }
     
     .itm {
@@ -148,6 +154,8 @@ pre{
         overflow-y: auto !important;
         overflow-x: hidden !important;
         z-index: 100;
+        word-break:keep-all;
+        box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.178);
     }
 
     .itm__shadow{
@@ -172,22 +180,19 @@ pre{
     .txt__Box{
         position: relative;
         display: block;
+        width: 85%;
         line-height: 30px;
-        width: 300px;
         margin: auto;
         margin-top: 30px;
         margin-left: 20px;
         font-size: 15px;
+        word-break:keep-all;
+        padding-bottom: 80%;
     }
 
 }
 
 @media screen and (min-width: 1280px){
-    body{
-        margin: 0;
-        padding: 0;
-        overflow: hidden !important;
-    }
     
     .h1_title{
         position: relative;
@@ -211,17 +216,6 @@ pre{
         margin-top: 50px;
         font-size: 30px;
         font-weight: bold;
-    }
-
-    .txt__Box{
-        position: relative;
-        display: block;
-        line-height: 30px;
-        width: 500px;
-        margin: auto;
-        margin-top: 40px;
-        margin-left: 10%;
-        font-size: 20px;
     }
     
     ::-webkit-scrollbar {
@@ -263,6 +257,7 @@ pre{
         height: 1000px;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-top: 20px;
     }
     
     .itm {
@@ -276,6 +271,8 @@ pre{
         background: url('../../src/paper.png');
         background-repeat: no-repeat;
         background-size: cover;
+        word-break:break-all;
+        box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.178);
     }
     
     .itm__shadow{
@@ -296,6 +293,18 @@ pre{
         position: relative;
         z-index: 10;
     }  
+
+    .txt__Box{
+        position: relative;
+        display: block;
+        width: 85%;
+        line-height: 30px;
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 10%;
+        font-size: 20px;
+        padding-bottom: 30%;
+    }
 
 }
 

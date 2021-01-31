@@ -1,10 +1,22 @@
+var webAppend = (num) => {
+  eval('var chck = web.w'+num);
+  document.getElementsByClassName('txt__title')[num].innerHTML = chck.title;
+  document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
+};
+
+var mobileAppend = (num) => {
+  eval('var chck = mobile.m'+num);
+  document.getElementsByClassName('txt__title')[num].innerHTML = chck.title;
+  document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
+};
+
+
 window.onload = () =>{
 
   // if(window.innerWidth < 600){
 
-    for(var i=0; i < 5; i++){
-      document.getElementsByClassName('txt__title')[i].innerHTML = test.w3.title;
-      document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
+    for(var i=1; i < 7; i++){
+      webAppend(i);
     }
     
   // }else{
