@@ -1,20 +1,20 @@
 window.onload = () =>{
 
-  if(window.innerWidth < 600){
+  // if(window.innerWidth < 600){
 
     for(var i=0; i < 5; i++){
       document.getElementsByClassName('txt__title')[i].innerHTML = test.w3.title;
       document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
     }
     
-  }else{
+  // }else{
 
-    for(var i=0; i < 5; i++){
-      document.getElementsByClassName('txt__title')[i].innerHTML = test.w2.title;
-      document.getElementsByClassName('txt__Box')[i].innerHTML = test.w2.text;
-    }
+    // for(var i=0; i < 5; i++){
+    //   document.getElementsByClassName('txt__title')[i].innerHTML = test.w2.title;
+    //   document.getElementsByClassName('txt__Box')[i].innerHTML = test.w2.text;
+    // }
 
-  }
+  // }
 
 };
 
