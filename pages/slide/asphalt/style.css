@@ -26,6 +26,15 @@ a:hover {
     color: dimgray;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+hr{
+    margin: 0;
+}
 
 .container{
     position: absolute;
@@ -49,7 +58,7 @@ a:hover {
     display: inline-block;
     right: 0;
     background-repeat: no-repeat;
-    background-image: url('./src/menu.png');
+    background-image: url('../src/menu.png');
     width: 50px; 
     height: 50px;
     background-size: 30px;
@@ -74,7 +83,7 @@ a:hover {
     display: block;
     margin: 0;
     height: 100%;
-    width: 50%;
+    width: 30%;
     background-color: black ;
     opacity: 0%;
     right: 100%;
@@ -84,11 +93,9 @@ a:hover {
     z-index: 0;
     position: fixed;
     margin-left: 100%;
-    width: 50%;
+    width: 70%;
     height: 100%;
     background-color: #ffffff;
-}.on{
-    margin-left: 50%;
 }
 
 .menu__tab_list-itm{
@@ -105,8 +112,14 @@ a:hover {
     line-height: 20px;
 
     color: #000000;
+    font-size: 18px;
+    text-shadow: none;
 }.menu__tab_list-itm:hover{
     background-color: #EFEFEF;
+}
+
+.list-itm--divLine{
+    opacity: 30%;
 }
 /*--------------------------------------------*/
 
@@ -119,19 +132,68 @@ pre{
 
 .slick-dots{
     top: 94% !important;
-    z-index: 0 !important;
-}
-.slick-next{
     z-index: 10 !important;
-    right: 0 !important;
-    right: 30px !important;
-    font-size: 30px !important;
 }
-.slick-prev{
-    z-index: 10 !important;
-    left: 0 !important;
-    left: 30px !important;
-    font-size: 30px !important;
+
+.sliderBtn{
+    z-index: 10;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+}
+.arrow{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    background: url('../src/arrow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 60%;
+}
+
+#prevBtn{
+    position: relative;
+    display: inline-block;
+    float: left;
+    left: 0px;
+    width: 10%;
+    height: 1000px;
+    top: -350px;
+    opacity: 0%;
+    transition: .3s;
+}#prevBtn:hover{opacity: 100%; transition: .3s;}
+#nextBtn{
+    position: absolute;
+    display: inline-block;
+    float: right;
+    right: 0px;
+    width: 10%;
+    height: 1000px;
+    top: -350px;
+    opacity: 0%;
+    transition: .3s;
+}#nextBtn:hover{opacity: 100%; transition: .3s;}
+#ico--prevBtn{
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 40%;
+    transform: rotate(90deg);
+}
+#ico--nextBtn{
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 40%;
+    transform: rotate(-90deg);
 }
 
 
@@ -224,9 +286,9 @@ pre{
     }
     
     .slick-dots {
-        top: 750px;
+        top: 86% !important;
         position: relative;
-        z-index: 10;
+        z-index: 10 !important;
     }
     
     .txt__Box{
@@ -242,6 +304,9 @@ pre{
         padding-bottom: 80%;
     }
 
+    .sliderBtn{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px){
@@ -317,7 +382,7 @@ pre{
         position: relative;
         margin: auto;
         width: 1100px;
-        height: 93%;
+        height: 85%;
         overflow-y: auto !important;
         overflow-x: hidden !important;
         background: url('../../../src/paper.png');
@@ -330,7 +395,7 @@ pre{
     .itm__shadow{
         position: absolute;
         width: 1100px;
-        height: 93%;
+        height: 85%;
         background-color: #000000;
         top: 8px;
         left: 50.9%;
@@ -356,6 +421,10 @@ pre{
         margin-left: 10%;
         font-size: 20px;
         padding-bottom: 30%;
+    }
+
+    .sliderBtn{
+        display: block;
     }
 
 }

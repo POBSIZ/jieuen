@@ -22,8 +22,8 @@ var menuOpen = () => {
   var menu = document.getElementsByClassName('menu')[0];
 
   menu.setAttribute('style', 'z-index: 20;');
-  menuTab.setAttribute('style', 'margin-left: 50%; opacity: 100%; z-index: 20; transition: .5s;');
-  menuBlank.setAttribute('style', 'right: 50%; opacity: 70%; z-index: 20; transition: .5s;');
+  menuTab.setAttribute('style', 'margin-left: 30%; opacity: 100%; z-index: 20; transition: .5s;');
+  menuBlank.setAttribute('style', 'right: 70%; opacity: 70%; z-index: 20; transition: .5s;');
 }
 
 window.onload = () =>{
@@ -36,6 +36,8 @@ $('.slider-nav').slick({
   slidesToScroll: 1,
   dots: true,  
   arrows: true,
+  prevArrow: $('#prevBtn'),
+  nextArrow: $('#nextBtn'),
   autoplay: false,
   autoplaySpeed: 2000,  
 });
