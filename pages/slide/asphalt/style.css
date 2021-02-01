@@ -282,11 +282,16 @@ pre{
 
 .txt__title{
     position: relative;
-    display: block;
+    display: inline-block;
     margin: auto;
     font-weight: bold;
     margin-top: 50px;
     font-size: 30px;
+}
+
+.txt__author{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .txt__Box{
@@ -295,6 +300,62 @@ pre{
     margin: auto;
     word-break:keep-all;
 }
+
+.itm__author{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+}
+
+
+
+.itm__author--comment{
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 90%;
+
+    height: 5%;
+    transition: .3s;
+}.itm__author--comment:hover{height: auto;transition: .3s;}
+.itm__author--comment-title{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}.itm__author--comment:hover{transition: .3s;}
+.itm__author--comment-text{
+
+}
+
+
+
+.itm__author--interview{
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 90%;
+
+    height: 5%;
+    transition: .3s;
+}.itm__author--interview:hover{height: auto;transition: .3s;}
+.itm__author--interview-title{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+}.itm__author--interview:hover{transition: .3s;}
+.itm__author--interview-text{
+
+}
+
+
 
 .slick-dots {
     position: absolute !important;
@@ -784,8 +845,6 @@ pre{
     #nextBtn{display: inline-block !important;}
     #prevBtn{display: inline-block !important;}
 }
-
-@media screen and (min-width: 1065px){}
 
 @media screen and (min-width: 1080px){
     
