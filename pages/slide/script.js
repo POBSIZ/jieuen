@@ -13,37 +13,26 @@ var mobileAppend = (num) => {
 
 window.onload = () =>{
 
-  // if(window.innerWidth < 600){
-
-    for(var i=1; i < 7; i++){
-      webAppend(i);
-    }
-    
-  // }else{
-
-    // for(var i=0; i < 5; i++){
-    //   document.getElementsByClassName('txt__title')[i].innerHTML = test.w2.title;
-    //   document.getElementsByClassName('txt__Box')[i].innerHTML = test.w2.text;
-    // }
-
-  // }
-
-};
-
-window.onchange = () => {
-  if(window.innerWidth > 360){
-    document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
+  for(var i=1; i < 7; i++){
+    webAppend(i);
   }
+
 };
+
+// window.onchange = () => {
+//   if(window.innerWidth > 360){
+//     document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
+//   }
+// };
 
 // set Slick Slider
 $('.slider-nav').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: false,  
-  arrows: false,
+  dots: true,  
+  arrows: true,
   autoplay: false,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2000,  
 });
 
 

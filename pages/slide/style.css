@@ -148,7 +148,7 @@ pre{
         position: relative;
         margin: auto;
         width: 350px;
-        height: 90%;
+        height: 80%;
         background-size: cover;
         background: url('../../src/paper.png');
         overflow-y: auto !important;
@@ -265,7 +265,7 @@ pre{
         position: relative;
         margin: auto;
         width: 1100px;
-        height: 100%;
+        height: 93%;
         overflow-y: auto !important;
         overflow-x: hidden !important;
         background: url('../../src/paper.png');
@@ -278,7 +278,7 @@ pre{
     .itm__shadow{
         position: absolute;
         width: 1100px;
-        height: 100%;
+        height: 93%;
         background-color: #000000;
         top: 8px;
         left: 50.9%;
