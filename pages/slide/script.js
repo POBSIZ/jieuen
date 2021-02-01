@@ -5,13 +5,25 @@ var webAppend = (num) => {
 };
 
 // MENU TAB
-function menuExit(){
+var menuExit = () => {
+  var menuBlank = document.getElementsByClassName('menu__blank')[0];
+  var menuTab = document.getElementsByClassName('menu__tab')[0];
   var menu = document.getElementsByClassName('menu')[0];
-  menu.style.display = 'none';
+
+  menuTab.setAttribute('style', 'margin-left: 100%; opacity: 0%; z-index: 0; transition: .5s;');
+  menuBlank.setAttribute('style', 'right: 100%; opacity: 0%; z-index: 0; transition: .5s;');
+  setTimeout(function() {
+    menu.setAttribute('style', 'z-index: 0;');
+  }, 0300); //1000 = 1s
 }
-function menuOpen(){
+var menuOpen = () => {
+  var menuBlank = document.getElementsByClassName('menu__blank')[0];
+  var menuTab = document.getElementsByClassName('menu__tab')[0];
   var menu = document.getElementsByClassName('menu')[0];
-  menu.style.display = 'block';
+
+  menu.setAttribute('style', 'z-index: 20;');
+  menuTab.setAttribute('style', 'margin-left: 50%; opacity: 100%; z-index: 20; transition: .5s;');
+  menuBlank.setAttribute('style', 'right: 50%; opacity: 70%; z-index: 20; transition: .5s;');
 }
 
 window.onload = () =>{
