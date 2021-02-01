@@ -22,8 +22,18 @@ var webAppend = (num) => {
   document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
 };
 
+var dropArrow = document.getElementsByClassName('dropArrow')[0];
+var cartegory = document.querySelector('#menu__tab_list-itm--cartegory');
+
 window.onload = () => {
   for(var i=1; i < 7; i++){webAppend(i);}
+
+  cartegory.addEventListener('mouseover', function(){
+    dropArrow.setAttribute('style', 'transform: rotate(90deg); transition: .3s;');
+  });
+  cartegory.addEventListener('mouseout', function(){
+    dropArrow.setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
+  });
 };
 
 // set Slick Slider
@@ -37,4 +47,3 @@ $('.slider-nav').slick({
   autoplay: false,
   autoplaySpeed: 2000,  
 });
-

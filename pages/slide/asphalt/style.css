@@ -15,15 +15,8 @@ body{
 ::-webkit-scrollbar { display: none; }
 
 a {
-    font-size: 25px;
+    margin: 0;
     text-decoration: none;
-    color: black;
-    padding-right: 20px;
-    transition: color 0.2s;
-}
-
-a:hover {
-    color: dimgray;
 }
 
 ul{
@@ -48,6 +41,7 @@ hr{
 
 .h1_title{
     z-index: 30;
+    font-size: 25px;
 }
 
 /* MENU */
@@ -96,6 +90,7 @@ hr{
     width: 70%;
     height: 100%;
     background-color: #ffffff;
+    transition: .3s;
 }
 
 .menu__tab_list-itm{
@@ -114,32 +109,55 @@ hr{
     color: #000000;
     font-size: 18px;
     text-shadow: none;
+    transition: .3s;
 }.menu__tab_list-itm:hover{
     background-color: #EFEFEF;
+    transition: .3s;
 }
+
+#menu__tab_list-itm--cartegory{
+    height: 34px;
+    padding-bottom: 0;
+    overflow: hidden;
+    transition: .3s;
+}#menu__tab_list-itm--cartegory:hover{padding-bottom: 200px; transition: .3s;}
 
 .list-itm--divLine{
-    opacity: 30%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    /* opacity: 30%; */
 }
 
-.menu__tab_list-itm--subList{
-    width: 100%;
-    height: 500px;
-    background-color: brown;
-}
+
 .itm--subList--itm{
     position: relative;
     display: block;
     cursor: pointer;
 
-    margin-top: 10px;
-
     width: 100%;
     height: 34px;
-    background-color: #ffffff;
+    margin-top: 0px;
+    margin-left: -16px;
     padding-top: 14px;
-    padding-left: 16px;
-}
+    padding-left: 32px;
+    transition: .3s;
+}.itm--subList--itm:hover{background-color: #adadad; transition: .3s;}
+#texFirst{margin-top: 18px;}
+
+.dropArrow{
+    position: relative;
+    display: inline-block;
+    float: right;
+    right: 25px;
+    width: 18px;
+    height: 18px;
+    background: url('../src/arrow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .3s;
+}.dropArrow:hover{transform: rotate(90deg); transition: .3s;}
 
 /*--------------------------------------------*/
 
