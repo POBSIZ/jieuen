@@ -4,26 +4,19 @@ var webAppend = (num) => {
   document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
 };
 
-var mobileAppend = (num) => {
-  eval('var chck = mobile.m'+num);
-  document.getElementsByClassName('txt__title')[num].innerHTML = chck.title;
-  document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
-};
-
+// MENU TAB
+function menuExit(){
+  var menu = document.getElementsByClassName('menu')[0];
+  menu.style.display = 'none';
+}
+function menuOpen(){
+  var menu = document.getElementsByClassName('menu')[0];
+  menu.style.display = 'block';
+}
 
 window.onload = () =>{
-
-  for(var i=1; i < 7; i++){
-    webAppend(i);
-  }
-
+  for(var i=1; i < 7; i++){webAppend(i);}
 };
-
-// window.onchange = () => {
-//   if(window.innerWidth > 360){
-//     document.getElementsByClassName('txt__Box')[i].innerHTML = test.w3.text;
-//   }
-// };
 
 // set Slick Slider
 $('.slider-nav').slick({
@@ -33,12 +26,4 @@ $('.slider-nav').slick({
   arrows: true,
   autoplay: false,
   autoplaySpeed: 2000,  
-});
-
-
-jQuery(document).ready(function($){
-  $("li.content").hide();
-  $("ul.toggle-menu").delegate("li.toggle", "click", function() { 
-  $(this).next().toggle("fast").siblings(".content").hide("fast");
-    });
 });

@@ -173,16 +173,28 @@ body {
 }
 
 .texture__wrap{
+  z-index: 100;
+  position: absolute;
   display: block;
+  width: 245px;
+  height: 190px;
+  top: 48%;
+  left: 48.8%;
+  transform: translateX(-50%);
+  font-size: 0;
+
+  background-color: rgba(255, 0, 0, 0.11);
 }
 .texture__btn{
+  position: relative;
+  display: inline-block;  
   cursor: pointer;
-  position: absolute;
-  display: block;  
-  background-color: rgb(255, 0, 0);
-  width: 100px;
-  height: 65px; 
-  z-index: 100;
+
+  width: 122px;
+  height: 95px; 
+  z-index: 120;
+
+  background-color: rgb(98, 0, 255);
   opacity: 20%;
 }
 
@@ -207,16 +219,6 @@ body {
 }
 
 @media screen and (min-width: 375px){
-  .texture__btn{width: 15%; height: 36px;}
-  #b1{left: 31%; top: 50.8%;}
-  #b2{left: 52%; top: 50.8%;}
-  #b3{left: 31%; top: 60%;}
-  #b4{left: 52%; top: 60%;}
-  /* .texture__btn{width: 53px; height: 36px;} */
-  /* #b1{left: 111px; top: 392px;} */
-  /* #b2{left: 187px; top: 392px;} */
-  /* #b3{left: 111px; top: 450px;} */
-  /* #b4{left: 187px; top: 450px;} */
 
   .slide__img {
     position: relative;
@@ -254,13 +256,6 @@ body {
 }
 
 @media screen and (min-width: 1280px){
-
-  .texture__btn{width: 100px; height: 65px;}
-  #b1{left: 430px; top: 385px;}
-  #b2{left: 568px; top: 385px;}
-  #b3{left: 430px; top: 490px;}
-  #b4{left: 568px; top: 490px;}
-
   .slide__img {
     position: relative;
     display: block;

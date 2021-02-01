@@ -37,44 +37,66 @@ a:hover {
     background-repeat: no-repeat !important;
 }
 
-.menu-links {
-    float: right;  
-    padding-right: 20px;
-    margin-top: 20px;
-}
 
-.toggle-menu {
-    float: right; 
-}
-
-.toggle-menu li {
-    display: block;
-    float: left;
-    list-style-type: none;
-    text-align: left;
-}
-
-.toggle {
-    padding-top: 5px;
+/* MENU */
+.menuBtn{
     cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    background-repeat: no-repeat;
+    background-image: url('./src/menu.png');
+    width: 50px; 
+    height: 50px;
+    background-size: 30px;
+    background-position: center;
 }
 
-li.toggle:hover span.toggle-menu-bar {
-    background-color: dimgray;
+.menu{
+    position: fixed;
+    display: none;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    margin: auto;
+    width: 360px;
+    height: 100%;
 }
 
-.toggle-menu-bar {
+.menu__tab{
+    position: fixed;
+    margin-left: 100px;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.menu__blank{
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    background-color: black ;
+    opacity: 70%;
+}
+
+.menu__tab_list-itm{
+    cursor: pointer;
     display: block;
-    width: 25px;
-    height: 4px;
-    background-color: black;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    margin: 0 auto 3px;
-    transition: background-color 0.2s;
-}
+    width: 50%;
+    height: 34px;
+    background-color: #ffffff;
+    padding-top: 14px;
+    padding-left: 16px;
 
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #000000;
+}.menu__tab_list-itm:hover{
+    background-color: #EFEFEF;
+}
+/*--------------------------------------------*/
 
 pre{
     margin: 0;
