@@ -37,9 +37,13 @@ a:hover {
     background-repeat: no-repeat !important;
 }
 
+.h1_title{
+    z-index: 30;
+}
 
 /* MENU */
 .menuBtn{
+    z-index: 20;
     cursor: pointer;
     position: absolute;
     display: inline-block;
