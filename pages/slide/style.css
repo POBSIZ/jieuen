@@ -83,6 +83,21 @@ pre{
     white-space: pre-wrap; 
 }
 
+.slick-dots{
+    top: 94% !important;
+}
+.slick-next{
+    right: 0 !important;
+    right: 30px !important;
+    font-size: 30px !important;
+}
+.slick-prev{
+    left: 0 !important;
+    left: 30px !important;
+    font-size: 30px !important;
+}
+
+
 @media screen and (min-width: 360px){
     
     .h1_title{
