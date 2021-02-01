@@ -43,7 +43,5 @@ $('.slider-nav').slick({
   dots: true,  
   arrows: true,
   prevArrow: $('#prevBtn'),
-  nextArrow: $('#nextBtn'),
-  autoplay: false,
-  autoplaySpeed: 2000,  
+  nextArrow: $('#nextBtn'),  
 });
