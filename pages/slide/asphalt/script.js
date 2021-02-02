@@ -21,8 +21,8 @@ var webAppend = (num) => {
   document.getElementsByClassName('txt__title')[num].innerHTML = chck.title;
   document.getElementsByClassName('txt__author')[num].innerHTML = chck.author;
   document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
-  document.getElementsByClassName('itm__author--comment-text')[num].innerHTML = chck.comment;
-  document.getElementsByClassName('itm__author--interview-text')[num].innerHTML = chck.interview;
+  // document.getElementsByClassName('itm__author--comment-text')[num].innerHTML = chck.comment;
+  // document.getElementsByClassName('itm__author--interview-text')[num].innerHTML = chck.interview;
 };
 
 
@@ -36,7 +36,7 @@ var dropAuthor = (event) => {
 };
 
 window.onload = () => {
-  for(var i=1; i < 3; i++){
+  for(var i=1; i < 7; i++){
     webAppend(i);
   }
 
