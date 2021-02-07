@@ -523,12 +523,12 @@ pre{
     
     .itm {
         width: 330px;
-        height: 80%;
+        height: 65%;
     }
 
     .itm__shadow{
         width: 350px;
-        height: 80%;
+        height: 65%;
     }
     
     .txt__title{
@@ -579,12 +579,69 @@ pre{
     
     .itm {
         width: 330px;
-        height: 85%;
+        height: 68%;
     }
 
     .itm__shadow{
         width: 350px;
-        height: 85%;
+        height: 68%;
+    }
+    
+    .txt__title{
+        margin-top: 50px;
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .txt__Box{
+        width: 85%;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 15px;
+        padding-bottom: 80%;
+    }
+
+    .slick-dots {
+        top: -2% !important;
+    }
+
+    #nextBtn{display: none !important;}
+    #prevBtn{display: none !important;}
+}
+
+@media screen and (min-width: 411px){
+    
+    .h1_title{
+        padding-left: 30px;
+        padding-top: 25px;
+        font-size: 150%;
+    }
+
+    .header{
+        width: 100%;
+        height: 80px;
+    }
+    
+    .background{
+        width: 100%;
+        height: 800px;
+    }
+    
+    .itm__wrapper{
+        width: 100%;
+        height: 800px;
+        margin-top: 20px;
+    }
+    
+    .itm {
+        width: 330px;
+        height: 75%;
+    }
+
+    .itm__shadow{
+        width: 350px;
+        height: 75%;
     }
     
     .txt__title{
