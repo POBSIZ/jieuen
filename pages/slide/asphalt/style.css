@@ -57,10 +57,6 @@ pre{
     position: absolute;
     display: inline-block;
     right: 0;
-    /* background-repeat: no-repeat;
-    background-image: url('../src/menu.png');
-    background-position: center;
-    background-size: 30px; */
     padding-right: 30px;
     padding-top: 20px;
     width: 50px; 
@@ -303,61 +299,62 @@ pre{
     word-break:keep-all;
 }
 
+
+/* author interview */
 .itm__author{
     position: relative;
     display: block;
-    margin: auto;
-    width: 80%;
-    height: 50%;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-
-
 .itm__author--comment{
+    overflow: hidden;
     position: relative;
     display: block;
     padding: 10px;
-    margin: auto;
+    margin: 0;
     background-color: #ffffff;
-    overflow: hidden;
-    width: 90%;
-
-    height: 5%;
+    height: 20px;
     transition: .3s;
-}.itm__author--comment:hover{height: auto;transition: .3s;}
+}.itm__author--comment:hover{
+    padding-bottom: 100px; 
+    transition: .3s;
+}
 .itm__author--comment-title{
     text-align: center;
     font-size: 150%;
     font-weight: bold;
 }.itm__author--comment:hover{transition: .3s;}
 .itm__author--comment-text{
-
+    text-align: center;
 }
 
 
-
 .itm__author--interview{
+    overflow: hidden;
     position: relative;
     display: block;
     padding: 10px;
-    margin: auto;
+    margin: 0;
     background-color: #ffffff;
-    overflow: hidden;
-    width: 90%;
-
-    height: 5%;
+    height: 20px;
     transition: .3s;
-}.itm__author--interview:hover{height: auto;transition: .3s;}
+}.itm__author--interview:hover{
+    padding-bottom: 100px; 
+    transition: .3s;
+}
 .itm__author--interview-title{
     text-align: center;
     font-size: 150%;
     font-weight: bold;
 }.itm__author--interview:hover{transition: .3s;}
 .itm__author--interview-text{
-
+    text-align: center;
 }
-
-
+/* --------------------------------------- */
 
 .slick-dots {
     position: absolute !important;
@@ -1010,5 +1007,3 @@ pre{
     #nextBtn{display: inline-block !important;}
     #prevBtn{display: inline-block !important;}
 }
-
-
