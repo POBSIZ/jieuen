@@ -61,7 +61,8 @@ pre{
     background-image: url('../src/menu.png');
     background-position: center;
     background-size: 30px; */
-    padding: 5%;
+    padding-right: 30px;
+    padding-top: 20px;
     width: 50px; 
     height: 50px;
     font-size: 20px;
@@ -369,8 +370,13 @@ pre{
 @media screen and (max-width: 280px){
     .h1_title{
         padding-left: 10px;
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 150%;
+    }
+
+    .menuBtn{
+        padding-right: 10px;
+        padding-top: 10px;
     }
 
     .header{
@@ -405,7 +411,7 @@ pre{
 @media screen and (min-width: 280px){
     .h1_title{
         padding-left: 10px;
-        padding-top: 10px;
+        padding-top: 20px;
         font-size: 150%;
     }
 
@@ -442,7 +448,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -498,7 +504,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -554,7 +560,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -611,7 +617,7 @@ pre{
         
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -667,7 +673,7 @@ pre{
         
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -724,7 +730,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -781,7 +787,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -838,7 +844,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -895,7 +901,7 @@ pre{
 
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 25px;
         font-size: 150%;
     }
 
@@ -952,7 +958,7 @@ pre{
     
     .h1_title{
         padding-left: 30px;
-        padding-top: 20px;
+        padding-top: 30px;
         font-size: 150%;
     }
 
