@@ -315,44 +315,35 @@ pre{
     position: relative;
     display: block;
     padding: 10px;
+    padding-bottom: 15px;
     margin: 0;
     background-color: #ffffff;
     height: 20px;
-    transition: .3s;
-}.itm__author--comment:hover{
-    padding-bottom: 100px; 
     transition: .3s;
 }
 .itm__author--comment-title{
     text-align: center;
     font-size: 150%;
     font-weight: bold;
-}.itm__author--comment:hover{transition: .3s;}
+}
 .itm__author--comment-text{
     text-align: center;
 }
 
-
-.itm__author--interview{
-    overflow: hidden;
+.author_dropArrow{
     position: relative;
-    display: block;
-    padding: 10px;
-    margin: 0;
-    background-color: #ffffff;
-    height: 20px;
+    display: inline-block;
+    float: right;
+    right: 50px;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    background: url('../src/arrow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
     transition: .3s;
-}.itm__author--interview:hover{
-    padding-bottom: 100px; 
-    transition: .3s;
-}
-.itm__author--interview-title{
-    text-align: center;
-    font-size: 150%;
-    font-weight: bold;
-}.itm__author--interview:hover{transition: .3s;}
-.itm__author--interview-text{
-    text-align: center;
 }
 /* --------------------------------------- */
 
@@ -486,7 +477,7 @@ pre{
         margin-top: 30px;
         margin-left: 20px;
         font-size: 15px;
-        padding-bottom: 80%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -542,7 +533,7 @@ pre{
         margin-top: 30px;
         margin-left: 20px;
         font-size: 15px;
-        padding-bottom: 80%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -599,7 +590,7 @@ pre{
         margin-top: 30px;
         margin-left: 20px;
         font-size: 15px;
-        padding-bottom: 80%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -656,7 +647,7 @@ pre{
         margin-top: 30px;
         margin-left: 20px;
         font-size: 15px;
-        padding-bottom: 80%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -712,7 +703,7 @@ pre{
         margin-top: 30px;
         margin-left: 20px;
         font-size: 15px;
-        padding-bottom: 80%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -769,7 +760,7 @@ pre{
         margin-top: 40px;
         margin-left: 10%;
         font-size: 20px;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -826,7 +817,7 @@ pre{
         margin-top: 40px;
         margin-left: 10%;
         font-size: 20px;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -883,7 +874,7 @@ pre{
         margin-top: 40px;
         margin-left: 10%;
         font-size: 20px;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -940,7 +931,7 @@ pre{
         margin-top: 40px;
         margin-left: 10%;
         font-size: 20px;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -997,7 +988,7 @@ pre{
         margin-top: 40px;
         margin-left: 10%;
         font-size: 20px;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {
@@ -1054,7 +1045,7 @@ pre{
         margin-top: 40px;
         margin-left: 10%;
         font-size: 20px;
-        padding-bottom: 30%;
+        padding-bottom: 5%;
     }
 
     .slick-dots {

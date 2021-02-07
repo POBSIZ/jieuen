@@ -14,7 +14,7 @@ var menuOpen = () => {
   menuTab.setAttribute('style', 'margin-left: 30%; opacity: 100%; z-index: 20; transition: .5s;');
   menuBlank.setAttribute('style', 'right: 70%; opacity: 70%; z-index: 20; transition: .5s;');
 }
-
+// ------------------------------------------------------------------------------------------------
 
 var webAppend = (num) => {
   eval('var chck = web.w'+num);
@@ -22,24 +22,34 @@ var webAppend = (num) => {
   document.getElementsByClassName('txt__author')[num].innerHTML = chck.author;
   document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
   document.getElementsByClassName('itm__author--comment-text')[num].innerHTML = chck.comment;
-  document.getElementsByClassName('itm__author--interview-text')[num].innerHTML = chck.interview;
 };
-
 
 var dropArrow = document.getElementsByClassName('dropArrow')[0];
 var cartegory = document.querySelector('#menu__tab_list-itm--cartegory');
 
+var commentArrow = document.getElementsByClassName('author_dropArrow');
 var commentClick = document.getElementsByClassName('itm__author--comment');
-var interviewClick = document.getElementsByClassName('itm__author--interview');
-var dropAuthor = (event) => {
-  event.style.color = 'red';
-};
+var commentNum = 0;
+var commentEvent =(i)=>{
+  commentClick[i].addEventListener('click', function(){
+    if (commentNum == 0) {
+      commentClick[i].setAttribute('style', 'padding-bottom: 100px; transition: .3s;');
+      commentArrow[i].setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
+      commentNum ++;
+    }else{
+      commentClick[i].setAttribute('style', 'padding-bottom: 15px; transition: .3s;');
+      commentArrow[i].setAttribute('style', 'transform: rotate(90deg); transition: .3s;');
+      commentNum --;
+    }
+  });
+}
 
 window.onload = () => {
   for(var i=1; i < 7; i++){
     webAppend(i);
+    commentEvent(i);
   }
-
+  
   cartegory.addEventListener('mouseover', function(){dropArrow.setAttribute('style', 'transform: rotate(90deg); transition: .3s;');});
   cartegory.addEventListener('mouseout', function(){dropArrow.setAttribute('style', 'transform: rotate(0deg); transition: .3s;');});
 };

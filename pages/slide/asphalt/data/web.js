@@ -225,12 +225,6 @@ dsadasdasdsa
 dsadasdasdsa
 dsadasdasdsa
 `,
-        interview:
-`
-sadsadsahjdkhas
-sadsadsahjdkhas
-sadsadsahjdkhas
-`,
     },
     
     w2:{
@@ -248,9 +242,6 @@ sadsadsahjdkhas
 비닐 위에 박힌 점들이 알록달록하다. 닿는 빗방울에서 바닐라 맛이 날 것만 같아 잠시나마 포근했다. 당신은 따뜻했고 부드러운 기억이다. 잃고 싶지 않았다. 
 ` ,
         comment:
-`
-`,
-        interview:
 `
 `,
     },
@@ -273,9 +264,6 @@ sadsadsahjdkhas
 바람이 분다.
 ` ,
         comment:
-`
-`,
-        interview:
 `
 `,
     },
@@ -342,9 +330,6 @@ sadsadsahjdkhas
         comment:
 `
 `,
-        interview:
-`
-`,
     },
     
     w5:{
@@ -403,9 +388,6 @@ sadsadsahjdkhas
         comment:
 `
 `,
-        interview:
-`
-`,
     },
     
     w6:{
@@ -429,9 +411,6 @@ sadsadsahjdkhas
 
 ` ,
         comment:
-`
-`,
-        interview:
 `
 `,
     },
