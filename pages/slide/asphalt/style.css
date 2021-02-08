@@ -97,6 +97,7 @@ pre{
     height: 100%;
     background-color: #ffffff;
     transition: .3s;
+    overflow-y: auto;
 }
 
 
@@ -127,7 +128,7 @@ pre{
     padding-bottom: 0;
     overflow: hidden;
     transition: .3s;
-}#menu__tab_list-itm--cartegory:hover{padding-bottom: 200px; transition: .3s;}
+}
 
 .list-itm--divLine{
     height: 1px;
@@ -162,8 +163,9 @@ pre{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transform: rotate(90deg);
     transition: .3s;
-}.dropArrow:hover{transform: rotate(90deg); transition: .3s;}
+}
 
 /*--------------------------------------------*/
 
@@ -227,7 +229,7 @@ pre{
 
 
 .h1_title{
-    z-index: 30;
+    z-index: 1 !important;
     position: relative;
     display: inline-block;
     margin: 0;

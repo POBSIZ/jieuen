@@ -26,6 +26,20 @@ var webAppend = (num) => {
 
 var dropArrow = document.getElementsByClassName('dropArrow')[0];
 var cartegory = document.querySelector('#menu__tab_list-itm--cartegory');
+var menuNum = 0;
+var menuEvent =()=>{
+  cartegory.addEventListener('click', function(){
+    if (menuNum == 0) {
+      cartegory.setAttribute('style', 'padding-bottom: 100%; transition: .3s;');
+      dropArrow.setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
+      menuNum ++;
+    }else{
+      cartegory.setAttribute('style', 'padding-bottom: 0; transition: .3s;');
+      dropArrow.setAttribute('style', 'transform: rotate(90deg); transition: .3s;');
+      menuNum --;
+    }
+  });
+}
 
 var commentArrow = document.getElementsByClassName('author_dropArrow');
 var commentClick = document.getElementsByClassName('itm__author--comment');
@@ -45,13 +59,11 @@ var commentEvent =(i)=>{
 }
 
 window.onload = () => {
+  menuEvent();
   for(var i=1; i < 8; i++){
     webAppend(i);
     commentEvent(i);
   }
-  
-  cartegory.addEventListener('mouseover', function(){dropArrow.setAttribute('style', 'transform: rotate(90deg); transition: .3s;');});
-  cartegory.addEventListener('mouseout', function(){dropArrow.setAttribute('style', 'transform: rotate(0deg); transition: .3s;');});
 };
 
 // set Slick Slider
