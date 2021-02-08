@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Dirt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">걸음마展</h1>
+            </a>
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            갈림길<span class="dropArrow"></span>
+                            <a href=""><div id="texFirst" class="itm--subList--itm">잔디</div></a>
+                            <a href=""><div class="itm--subList--itm">아스팔트</div></a>
+                            <a href=""><div class="itm--subList--itm">흙</div></a>
+                            <a href=""><div class="itm--subList--itm">시멘트</div></a>
+                            
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            <a href=""><div class="itm--subList--itm">test</div></a>
+                            
+                        </li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">
+                            <li class="menu__tab_list-itm">지은이의 말</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <a href="">
+                            <li class="menu__tab_list-itm">지은이에게 묻습니다</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            
+            <div id="prevBtn">
+                <div class="arrow" id="ico--prevBtn"></div>
+            </div>
+            <div id="nextBtn">
+                <div class="arrow" id="ico--nextBtn"></div>
+            </div>
+
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"></span>
+                            <span class="txt__author"></span>
+                        </div>
+                        <pre class="txt__Box"></pre>
+
+                        <div class="itm__author">
+                            <div class="itm__author--comment">
+                                <div class="itm__author--comment-title">지은이의 말<span class="author_dropArrow"></span></div>
+                                <pre class="itm__author--comment-text"></pre>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
