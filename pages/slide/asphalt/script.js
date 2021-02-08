@@ -14,15 +14,6 @@ var menuOpen = () => {
   menuTab.setAttribute('style', 'margin-left: 30%; opacity: 100%; z-index: 20; transition: .5s;');
   menuBlank.setAttribute('style', 'right: 70%; opacity: 70%; z-index: 20; transition: .5s;');
 }
-// ------------------------------------------------------------------------------------------------
-
-var webAppend = (num) => {
-  eval('var chck = web.w'+num);
-  document.getElementsByClassName('txt__title')[num].innerHTML = chck.title;
-  document.getElementsByClassName('txt__author')[num].innerHTML = chck.author;
-  document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
-  document.getElementsByClassName('itm__author--comment-text')[num].innerHTML = chck.comment;
-};
 
 var dropArrow = document.getElementsByClassName('dropArrow')[0];
 var cartegory = document.querySelector('#menu__tab_list-itm--cartegory');
@@ -40,6 +31,16 @@ var menuEvent =()=>{
     }
   });
 }
+
+// ------------------------------------------------------------------------------------------------
+
+var webAppend = (num) => {
+  eval('var chck = web.w'+num);
+  document.getElementsByClassName('txt__title')[num].innerHTML = chck.title;
+  document.getElementsByClassName('txt__author')[num].innerHTML = chck.author;
+  document.getElementsByClassName('txt__Box')[num].innerHTML = chck.text;
+  document.getElementsByClassName('itm__author--comment-text')[num].innerHTML = chck.comment;
+};
 
 var commentArrow = document.getElementsByClassName('author_dropArrow');
 var commentClick = document.getElementsByClassName('itm__author--comment');

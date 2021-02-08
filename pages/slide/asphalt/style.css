@@ -243,7 +243,7 @@ pre{
 .header{
     position: relative;
     display: inline-block;
-    text-shadow: 2px 2px 3px #18181857;
+    /* text-shadow: 2px 2px 3px #18181857; */
 }
 
 .background{
@@ -268,12 +268,12 @@ pre{
     overflow-x: hidden !important;
     z-index: 100;
     word-break:keep-all;
-    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.178);
+    box-shadow: -5px -5px 20px rgba(107, 107, 107, 0.178);
 }
 
 .itm__shadow{
     position: absolute;
-    background-color: #000000;
+    background-color: #5f5f5f;
     top: 8px;
     left: 50.9%;
     transform: translateX(-50%);
