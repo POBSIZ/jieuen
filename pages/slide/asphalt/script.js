@@ -33,7 +33,7 @@ var commentNum = 0;
 var commentEvent =(i)=>{
   commentClick[i].addEventListener('click', function(){
     if (commentNum == 0) {
-      commentClick[i].setAttribute('style', 'padding-bottom: 100px; transition: .3s;');
+      commentClick[i].setAttribute('style', 'padding-bottom: 30%; transition: .3s;');
       commentArrow[i].setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
       commentNum ++;
     }else{
@@ -45,7 +45,7 @@ var commentEvent =(i)=>{
 }
 
 window.onload = () => {
-  for(var i=1; i < 7; i++){
+  for(var i=1; i < 8; i++){
     webAppend(i);
     commentEvent(i);
   }
