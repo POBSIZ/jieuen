@@ -99,6 +99,7 @@ pre{
     transition: .3s;
 }
 
+
 .menu__tab_list-itm{
     cursor: pointer;
     display: block;
@@ -279,6 +280,12 @@ pre{
     filter: blur(10px);
 }
 
+.txt__wrapper{
+    position: relative;
+    display: block;
+    margin-left: 5%;
+}
+
 .txt__title{
     position: relative;
     display: inline-block;
@@ -287,6 +294,7 @@ pre{
     width: auto;
     margin-top: 50px;
     font-size: 30px;
+    margin-left: 0% !important;
 }
 
 .txt__author{
