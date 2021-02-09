@@ -2148,3 +2148,13 @@
         #prevBtn{display: inline-block !important;}
     }
 }
+
+.slick-dots li button:before{
+    color: white !important;
+    opacity: 50% !important;
+}
+
+.slick-dots li.slick-active button:before{
+    color: white !important;
+    opacity: 100% !important;
+}
