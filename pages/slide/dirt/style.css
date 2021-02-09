@@ -187,7 +187,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 60%;
+        opacity: 100%;
     }
 
     #prevBtn{
@@ -199,7 +199,7 @@
         left: 0;
         width: 10%;
         height: 1000px;
-        opacity: 20%;
+        opacity: 80%;
         transition: .3s;
     }#prevBtn:hover{opacity: 100%; transition: .3s;}
     #nextBtn{
@@ -211,7 +211,7 @@
         right: 0;
         width: 10%;
         height: 1000px;
-        opacity: 20%;
+        opacity: 80%;
         transition: .3s;
     }#nextBtn:hover{opacity: 100%; transition: .3s;}
     #ico--prevBtn{
@@ -1262,7 +1262,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        opacity: 60%;
+        opacity: 100%;
     }
 
     #prevBtn{
@@ -1274,7 +1274,7 @@
         left: 0;
         width: 10%;
         height: 1000px;
-        opacity: 20%;
+        opacity: 80%;
         transition: .3s;
     }#prevBtn:hover{opacity: 100%; transition: .3s;}
     #nextBtn{
@@ -1286,7 +1286,7 @@
         right: 0;
         width: 10%;
         height: 1000px;
-        opacity: 20%;
+        opacity: 80%;
         transition: .3s;
     }#nextBtn:hover{opacity: 100%; transition: .3s;}
     #ico--prevBtn{
