@@ -287,7 +287,7 @@ D.S
     },
     
     w8:{
-        title:"<앤의 닻>",
+        title:"앤의 닻",
         author: "김태연",
         text:
 `
