@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Asphalt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">서재승</h1>
+            </a>
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            지은이들<span class="dropArrow"></span>
+                            <a href="./kmj.html"><div id="texFirst" class="itm--subList--itm">구민지</div></a>
+                            <a href="./ksk.html"><div class="itm--subList--itm">김상경</div></a>
+                            <a href="./kjd.html"><div class="itm--subList--itm">김정도</div></a>
+                            <a href="./kty.html"><div class="itm--subList--itm">김태연</div></a>
+                            <a href="./khy.html"><div class="itm--subList--itm">김해인</div></a>
+                            <a href="./nfm.html"><div class="itm--subList--itm">나필모</div></a>
+                            <a href="./psh.html"><div class="itm--subList--itm">박성환</div></a>
+                            <a href="./pek.html"><div class="itm--subList--itm">박은경</div></a>
+                            <a href="./pjh.html"><div class="itm--subList--itm">박진현</div></a>
+                            <a href="./smt.html"><div class="itm--subList--itm">서미태</div></a>
+                            <a href="./sjs.html"><div class="itm--subList--itm">서재승</div></a>
+                            <a href="./ywb.html"><div class="itm--subList--itm">여우비</div></a>
+                            <a href="./ljw.html"><div class="itm--subList--itm">이지원</div></a>
+                            <a href="./iyk.html"><div class="itm--subList--itm">임유경</div></a>
+                            <a href="./jjm.html"><div class="itm--subList--itm">장지명</div></a>
+                            <a href="./jsy.html"><div class="itm--subList--itm">정세인</div></a>
+                            <a href="./jy.html"><div class="itm--subList--itm">조양</div></a>
+                            <a href="./cjw.html"><div class="itm--subList--itm">최종욱</div></a>
+                            <a href="./hjm.html"><div class="itm--subList--itm">황지민</div></a>    
+                        </li>
+                        <hr class="list-itm--divLine">
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 하나.</span><br><br>
+                            <span class="txt__author">당신을 소개해주세요.</span>
+                        </div>
+                        <pre class="txt__Box">적어도 예술에서는 거짓말을 치지 않고 내가 가지고 있는 그대로를 다 표현하는 사람.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 둘. </span><br><br>
+                            <span class="txt__author"> 왜 글을 쓰나요?</span>
+                        </div>
+                        
+                        <pre class="txt__Box">나는 잡생각이 많은 사람이다. 가끔씩 너무 답답할 때 뭔가 표현하고 싶은데 다른 사람한테 말할 수는 없을 때 그럴 때 혼자 글을 쓴다. 그냥 기분이 좋거나 기분이 나쁠 때, 어떤 생각이 들 때, 어떤 작품이나 어떤 좋은 경험을 하고 영감이 떠오를 때 등 참 많은 상황에서 글을 쓴다. 그리고 글은 꼭 펜과 종이가 있어야 쓸 수 있는 게 아니라 휴대폰 메모장이나 노트북 등등 생활 속에서도 쓸 수 있기 때문에 편리하고 재밌는 기록물이 될 수 있다고 생각한다. 글쓰기를 어렵게 생각하고 재미없다고 생각하는 사람들이 많이 있는데 하다 보면 되게 좋은 취미가 될 수 있다고 장담한다. 감정도 치유가 되면서 남의 감정도 같이 치유할 수 있다는 것이 얼마나 좋은가. 그게 글쓰기의 매력이라고 생각한다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title">물음 셋. </span><br><br>
+                            <span class="txt__author">당신에게 글이란 무엇인가요?</span>
+                        </div>
+                        <pre class="txt__Box">나에게 글이란 가식 없는 솔직함이다. 우리는 일상생활에서 많은 가식을 부리면서 살아간다. 사회생활을 하다 보면 가식은 어쩔 수 없는 것이다. 그것은 먹고사는 것과 관련이 있기 때문에 버릴 수가 없다. 그렇다면 솔직함을 친구한테 털어놓자니 너무 솔직한 개인사적인 이야기는 털어놓기 힘들 수가 있다. 그렇기 때문에 글을 쓴다. 거기서는 가식이라고는 찾아볼 수 없는 100% 솔직한 나의 모습이 나오니까. 그리고 여기서 좋은 점은 나는 그냥 내가 하고 싶은 이야기를 했고 내가 할 수 있는 이야기를 한 것뿐인데 그 글을 읽은 사람이 공감을 하고 좋아할 수가 있다. 이 또한 글의 신기한 점이라고 생각한다. 결국 나는 털어놓고 싶기 때문에 글을 쓴다고 할 수 있다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title">맺음말</span>
+                        </div>
+                        <pre class="txt__Box">글이 재미없을 수 있다. 나의 글에는 엄청난 비유와 상징이 들어가 있지 않다. 어찌 보면 감정 그대로의 글. 내가 하고 싶은 말들만 주저리주저리 해놓은 것일 수 있다. 하지만 그것은 확실하다. 여기에 거짓은 없다는 것. 나의 솔직한 감정과 생각들을 써놓은 글들이라는 것만 알아주었으면 좋겠다. 투박하지만 솔직한 글. 그것의 내 글의 색깔이다.</pre>
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

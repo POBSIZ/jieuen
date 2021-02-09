@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Asphalt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">김해인</h1>
+            </a>
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            지은이들<span class="dropArrow"></span>
+                        <a href="./kmj.html"><div id="texFirst" class="itm--subList--itm">구민지</div></a>
+                            <a href="./ksk.html"><div class="itm--subList--itm">김상경</div></a>
+                            <a href="./kjd.html"><div class="itm--subList--itm">김정도</div></a>
+                            <a href="./kty.html"><div class="itm--subList--itm">김태연</div></a>
+                            <a href="./khy.html"><div class="itm--subList--itm">김해인</div></a>
+                            <a href="./nfm.html"><div class="itm--subList--itm">나필모</div></a>
+                            <a href="./psh.html"><div class="itm--subList--itm">박성환</div></a>
+                            <a href="./pek.html"><div class="itm--subList--itm">박은경</div></a>
+                            <a href="./pjh.html"><div class="itm--subList--itm">박진현</div></a>
+                            <a href="./smt.html"><div class="itm--subList--itm">서미태</div></a>
+                            <a href="./sjs.html"><div class="itm--subList--itm">서재승</div></a>
+                            <a href="./ywb.html"><div class="itm--subList--itm">여우비</div></a>
+                            <a href="./ljw.html"><div class="itm--subList--itm">이지원</div></a>
+                            <a href="./iyk.html"><div class="itm--subList--itm">임유경</div></a>
+                            <a href="./jjm.html"><div class="itm--subList--itm">장지명</div></a>
+                            <a href="./jsy.html"><div class="itm--subList--itm">정세인</div></a>
+                            <a href="./jy.html"><div class="itm--subList--itm">조양</div></a>
+                            <a href="./cjw.html"><div class="itm--subList--itm">최종욱</div></a>
+                            <a href="./hjm.html"><div class="itm--subList--itm">황지민</div></a>    
+                        
+                        </li>
+                        <hr class="list-itm--divLine">
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 하나.</span><br><br>
+                            <span class="txt__author">당신을 소개해주세요.</span>
+                        </div>
+                        <pre class="txt__Box">남들보다 늦게 복학해서 학교 다니고 있는 고고학번 화석입니다^^.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 둘. </span><br><br>
+                            <span class="txt__author"> 주로 어디서 영감을 받으시나요?</span>
+                        </div>
+                        
+                        <pre class="txt__Box">돌이켜 생각해 보면 글을 쓸 때는 그냥 마음 가는 대로 떠오르는 대로 쓰는데, 글을 쓰고 나면 나도 모르게 인상 깊었던 장면이나 기억, 노래나 유튜브 영상이나 영화 같은 것들이 녹아있는 것 같습니다. 그래서 특별히 새로운 경험을 하지 않고 글만 계속 쓰려고 하다 보면 내 마음에 드는 글이 나오지 않더라고요. 내 마음에 드는 시집을 발견해서 읽는 것도 시를 쓰는 데 많은 영감을 주는 것 같습니다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title">물음 셋. </span><br><br>
+                            <span class="txt__author">왜 글을 쓰시나요?</span>
+                        </div>
+                        <pre class="txt__Box">처음에는 군대에서 답답한 마음이 약간 해소되는 기분으로 시를 쓴 것 같습니다. 쓰다 보니 나도 몰랐던 내 마음 같은 것들이 글에 묻어 나오고, 그걸 들여다보면서 나를 더 잘 이해하게 되는 계기가 됐습니다. 그냥 내 마음에 쏙 드는 시를 쓰는 데 성공하고 나면 기분이 무척 좋기도 하고, 나를 더 알아가는 그리고 나를 더 깊이 관찰하는 쓰임새로 글을 쓰는 것 같습니다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title">맺음말</span>
+                        </div>
+                        <pre class="txt__Box">모두들 평안한 마음으로 행복한 인생이 되었으면 좋겠습니다. 안녕~~</pre>
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

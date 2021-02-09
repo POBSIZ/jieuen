@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Asphalt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">이지원</h1>
+            </a>
+            <a href="https://blog.naver.com/jeaneylee">
+                <div class="sns"></div>
+            </a>
+
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            지은이들<span class="dropArrow"></span>
+                            <a href="./kmj.html"><div id="texFirst" class="itm--subList--itm">구민지</div></a>
+                            <a href="./ksk.html"><div class="itm--subList--itm">김상경</div></a>
+                            <a href="./kjd.html"><div class="itm--subList--itm">김정도</div></a>
+                            <a href="./kty.html"><div class="itm--subList--itm">김태연</div></a>
+                            <a href="./khy.html"><div class="itm--subList--itm">김해인</div></a>
+                            <a href="./nfm.html"><div class="itm--subList--itm">나필모</div></a>
+                            <a href="./psh.html"><div class="itm--subList--itm">박성환</div></a>
+                            <a href="./pek.html"><div class="itm--subList--itm">박은경</div></a>
+                            <a href="./pjh.html"><div class="itm--subList--itm">박진현</div></a>
+                            <a href="./smt.html"><div class="itm--subList--itm">서미태</div></a>
+                            <a href="./sjs.html"><div class="itm--subList--itm">서재승</div></a>
+                            <a href="./ywb.html"><div class="itm--subList--itm">여우비</div></a>
+                            <a href="./ljw.html"><div class="itm--subList--itm">이지원</div></a>
+                            <a href="./iyk.html"><div class="itm--subList--itm">임유경</div></a>
+                            <a href="./jjm.html"><div class="itm--subList--itm">장지명</div></a>
+                            <a href="./jsy.html"><div class="itm--subList--itm">정세인</div></a>
+                            <a href="./jy.html"><div class="itm--subList--itm">조양</div></a>
+                            <a href="./cjw.html"><div class="itm--subList--itm">최종욱</div></a>
+                            <a href="./hjm.html"><div class="itm--subList--itm">황지민</div></a>    
+                        </li>
+                        <hr class="list-itm--divLine">
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 하나.</span><br><br>
+                            <span class="txt__author">당신을 소개해주세요.</span>
+                        </div>
+                        <pre class="txt__Box">알아가고 이해하는 것을 좋아합니다. 복잡하고 어려워 보이지만 속을 까보면 쉬운 사람.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 둘. </span><br><br>
+                            <span class="txt__author"> 주로 어디서 영감을 받으시나요?</span>
+                        </div>
+                        
+                        <pre class="txt__Box">대화하다가 혹은 혼자 생각하다가 가장 영감이 많이 떠올라요. 흥미로웠던 사색, 사람들과 나눈 대화를 차곡차곡 쌓아서 혼자만의 동굴로 들어갑니다. 동굴에 도착하기 전에 그것들은 이미 다 까먹어 버리고, 동굴에서는 소화하는 작업을 합니다. 퇴고가 반이다, 라는 말처럼 글은 다듬는 과정의 역할도 크다고 생각합니다. 어울리는 음악을 틀어놓고 이렇게 저렇게 다듬다 보면 언젠가 그럴듯한 무언가가 탄생합니다. 누군가한테 보여주는 게 아니더라도 잘 다듬어지고 걸러진 깔끔한 글을 보면 만족스러워요. 그리고 그렇게 퇴고하는 과정에서 새로운 아이디어가 생각날 때가 많아요. 생각이 생각에 꼬리를 물고 퇴고하다 영감이 글허리를 뭅니다. 시작이나 끝부분보다는 허리를 물 때가 많은데 이런 경우 퇴고는 할수록 늘어납니다,,</pre>
+
+                        <div class="txt__wrapper">
+                            <span class="txt__title">물음 셋. </span><br><br>
+                            <span class="txt__author">왜 글을 쓰시나요?</span>
+                        </div>
+                        <pre class="txt__Box">방대하고 걷잡을 수 없는 생각들을 글로 정리하는 일은 퍼즐을 맞추는 일과 비슷합니다. 흩어진 조각 중에는 반짝이는 원석들이 많은데, 그런 것들을 좀 더 다듬어 주고 체계적으로 생각하도록 도와줍니다. 흩어진 생각들에게 일자리를 부여하는 과정이라고 설명할 수 있습니다. 처음에는 그런 생각들을 풀어 썼다가 n번의 퇴고를 거쳐 봐줄 만한 문장이 탄생할 때 ‘이래서 글을 쓰지’ 싶어요. 소설이나 시의 경우에는 추상적인 감상이나 상상을 글자로 만들어내는 과정 그 자체에서 즐거움과 만족감을 많이 느낍니다. 그냥 이 작업 자체가 저한테는 재밌는 일이에요. 생각을 정리하는 데 도움도 많이 되고요. 생각이 많으신 분들은 일기라도 종종 써보시는 것을 정말 추천합니다.</pre>
+
+                        <div class="txt__wrapper">
+                            <span class="txt__title">맺음말</span>
+                        </div>
+                        <pre class="txt__Box">부족한 글 끝까지 읽어주셔서 감사합니다. 만족스럽지 않은 작품을 전시하려니 부끄럽기도 합니다. 제 글에서 어떤 것을 가져가셨는지 모르겠지만, 모쪼록 좋거나 재밌거나 아름다운 것을 가져가셨으면 하는 바람입니다. 위로보다는 희망을 얻어가지 않으셨을까 기대합니다. 최악을 위한 대책과 최고를 위한 희망이 함께 한다면 어떤 일이든 헤쳐나가실 수 있을 거라 믿어요.</pre>
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

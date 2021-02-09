@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Asphalt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">김상경</h1>
+            </a>
+            <a href="https://www.instagram.com/come_up_to_the_p/">
+                <div class="sns"></div>
+            </a>
+
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            지은이들<span class="dropArrow"></span>
+                        <a href="./kmj.html"><div id="texFirst" class="itm--subList--itm">구민지</div></a>
+                            <a href="./ksk.html"><div class="itm--subList--itm">김상경</div></a>
+                            <a href="./kjd.html"><div class="itm--subList--itm">김정도</div></a>
+                            <a href="./kty.html"><div class="itm--subList--itm">김태연</div></a>
+                            <a href="./khy.html"><div class="itm--subList--itm">김해인</div></a>
+                            <a href="./nfm.html"><div class="itm--subList--itm">나필모</div></a>
+                            <a href="./psh.html"><div class="itm--subList--itm">박성환</div></a>
+                            <a href="./pek.html"><div class="itm--subList--itm">박은경</div></a>
+                            <a href="./pjh.html"><div class="itm--subList--itm">박진현</div></a>
+                            <a href="./smt.html"><div class="itm--subList--itm">서미태</div></a>
+                            <a href="./sjs.html"><div class="itm--subList--itm">서재승</div></a>
+                            <a href="./ywb.html"><div class="itm--subList--itm">여우비</div></a>
+                            <a href="./ljw.html"><div class="itm--subList--itm">이지원</div></a>
+                            <a href="./iyk.html"><div class="itm--subList--itm">임유경</div></a>
+                            <a href="./jjm.html"><div class="itm--subList--itm">장지명</div></a>
+                            <a href="./jsy.html"><div class="itm--subList--itm">정세인</div></a>
+                            <a href="./jy.html"><div class="itm--subList--itm">조양</div></a>
+                            <a href="./cjw.html"><div class="itm--subList--itm">최종욱</div></a>
+                            <a href="./hjm.html"><div class="itm--subList--itm">황지민</div></a>    
+                        </li>
+                        <hr class="list-itm--divLine">
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 하나.</span><br><br>
+                            <span class="txt__author">당신을 소개해주세요.</span>
+                        </div>
+                        <pre class="txt__Box">밝은 척하는 밝은 사람, 우울해하는 우울한 사람, 글을 쓰는 글을 좋아하는 사람</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 둘. </span><br><br>
+                            <span class="txt__author"> 주로 어디서 영감을 받으시나요?</span>
+                        </div>
+                        
+                        <pre class="txt__Box"> 글을 쓰게 될 때 언제나 그때의 감정이나 기분은 비슷합니다. 절대 밝은 기분은 아니지만 그렇다고 엄청나게 슬프며 눈물이 쏟아지는 그런 감정은 아닙니다. 그날 있었던 일 그날 내가 보았던 사람의 행동 그날 내가 감정 이입하게 되는 노래에서 그날 어떤 글을 쓸지 정하게 되는 것 같습니다. 저의 시에는 크게 두 가지 종류가 있는데 나와 관련이 된 글과 나와 완벽히 배제된 글들, 나와 관련이 된 글들은 내가 만난 사람들과 일들 하지 못했던 이야기들과 도저히 시에서도 쓰지 못할 것 같은 내용도 있습니다. 이렇게 스스로 시에도 솔직하지 못한 자신을 보며 씁쓸한 감정을 느끼고 이 감정에서도 많은 영감을 받습니다. 그럼에도 시를 쓰는 이유는 이 쓸쓸한 감정 또한 나의 감정이고 이 감정에서 가장 시가 잘 써지기 때문이 아닐까요.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title">물음 셋. </span><br><br>
+                            <span class="txt__author">당신에게 글이란 무엇인가요?</span>
+                        </div>
+                        <pre class="txt__Box">저는 시를 씁니다. 시를 처음 접하고 좋아하게 되고 써보고 싶다는 생각이 처음 들었을 때는 고등학생 때였던 것 같습니다. 처음 접한 이상, 윤동주의 시를 보고 나도 시를 써보고 싶다는 생각이 들었었죠, 그렇게 문학, 시를 좋아하게 됐던 것 같습니다. 그렇게 고등학교 생활이 끝나고 다음 학교생활을 위해 타지로 떠나기 얼마 전 밤에 갑자기 시를 써봐야겠다는 생각이 들었습니다. 그렇게 처음 쓴 시가 너무 재미있어 지은에 들어오고 시에 대한 생각이 완전히 바뀌었죠, 시를 남에게 보여주기 위하여 쓰지 않겠다. 나의 감정을 고스란히 담아 나 홀로 공감할 수 있는 시여도 만족하겠다. 이렇게 시는 나에게 스스로 약속이 되었고 감정을 기록하는 방법이 되었습니다. 저는 저를 위한 시를 씁니다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title">맺음말</span>
+                        </div>
+                        <pre class="txt__Box">나의 시를 타인이 본다. 라는 것은 그리 좋은 일이 아닐 수도 있습니다. 단어 하나하나의 부여해 놓은 의미를 다시 하나하나 풀어가는 일을 온전히 남에게 맡기는 것은 아이를 남에 손에 맡긴 것과 다른 것이 없죠. 그러나 이런 일을 하는 이유는 비로소 자신의 시가 남의 눈에서 읽힐 때 내가 배열한 문장에서 나올 수 있는 다른 감정들 의미들을 찾아볼 수 있기 때문이 아닐까요, 저의 시를 마음껏 해체하고 의미를 부여하는 기회가 되었으면 좋겠습니다.</pre>
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

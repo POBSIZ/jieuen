@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Asphalt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">장지명</h1>
+            </a>
+            
+            <a href="https://instagram.com/97.poet_jimyeoung?igshid=jk0kz6abbmel">
+                <div class="sns"></div>
+            </a>
+
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            지은이들<span class="dropArrow"></span>
+                        <a href="./kmj.html"><div id="texFirst" class="itm--subList--itm">구민지</div></a>
+                            <a href="./ksk.html"><div class="itm--subList--itm">김상경</div></a>
+                            <a href="./kjd.html"><div class="itm--subList--itm">김정도</div></a>
+                            <a href="./kty.html"><div class="itm--subList--itm">김태연</div></a>
+                            <a href="./khy.html"><div class="itm--subList--itm">김해인</div></a>
+                            <a href="./nfm.html"><div class="itm--subList--itm">나필모</div></a>
+                            <a href="./psh.html"><div class="itm--subList--itm">박성환</div></a>
+                            <a href="./pek.html"><div class="itm--subList--itm">박은경</div></a>
+                            <a href="./pjh.html"><div class="itm--subList--itm">박진현</div></a>
+                            <a href="./smt.html"><div class="itm--subList--itm">서미태</div></a>
+                            <a href="./sjs.html"><div class="itm--subList--itm">서재승</div></a>
+                            <a href="./ywb.html"><div class="itm--subList--itm">여우비</div></a>
+                            <a href="./ljw.html"><div class="itm--subList--itm">이지원</div></a>
+                            <a href="./iyk.html"><div class="itm--subList--itm">임유경</div></a>
+                            <a href="./jjm.html"><div class="itm--subList--itm">장지명</div></a>
+                            <a href="./jsy.html"><div class="itm--subList--itm">정세인</div></a>
+                            <a href="./jy.html"><div class="itm--subList--itm">조양</div></a>
+                            <a href="./cjw.html"><div class="itm--subList--itm">최종욱</div></a>
+                            <a href="./hjm.html"><div class="itm--subList--itm">황지민</div></a>   
+                        </li>
+                        <hr class="list-itm--divLine">
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 하나.</span><br><br>
+                            <span class="txt__author">당신을 소개해주세요.</span>
+                        </div>
+                        <pre class="txt__Box">술과 집안일을 좋아하는 작가 장지명입니다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 둘. </span><br><br>
+                            <span class="txt__author"> 글을 쓰지 않고는 못 살 것 같다고 느낀 적이 있나요?</span>
+                        </div>
+                        
+                        <pre class="txt__Box"> 항상 느끼고 있어요. 처음 글을 쓰기 시작했던 이유도 살고 싶어서였고 항상 우울한 시기에는 가장 가까이 있어 주는 것은 글이었고 세상에서 사라지고 싶을 때도 글을 쓰고 있었어요. 혼자 영화관에 앉아 영화를 보다가도, 책을 읽다가도, 방 안에 앉아 노래를 들을 때도, 돌아가는 세탁기 앞에 앉아서도. 문득 떠오르는 시상에 시를 쓰고 있어요. 글 없이 살기에는 제가 우울함에 많이 예민한 것 같아요. 글을 쓰는 삶은 제게 순간순간에 저를 흔적으로 남기고 다시 곱씹어볼 수 있는 삶이기에 저는 앞으로도 쭉 글을 쓰고 있을 것 같네요. 여기에 이렇게 글을 남기고 있는 것도 결국 글이 언제나 제 삶에 있길 원하는 마음이라고도 할 수 있을 것 같아요.</pre>
+
+                        <div class="txt__wrapper">
+                            <span class="txt__title">물음 셋. </span><br><br>
+                            <span class="txt__author">당신에게 글이란 무엇인가요?</span>
+                        </div>
+                        <pre class="txt__Box">단어로 말하면 '안경', '술', 문장으로 말하면 '글은 삶이 될 수 없지만 살아가기에 적당한 이유가 만들어 준다.' 에요. 제 안에 존재하는 많은 감정과 생각은 눈에 보이지 않는 것들이지만 글은 그런 것들을 눈에 보이게 만들어 줘요. 제가 말보다 글을 사랑하는 이유도 이런 이유에요. 말은 금방 사라지고 기억이 무뎌지는 순간부터 의미와 존재를 상실하게 돼요. 하지만, 글은 검은 활자가 훼손되지 않는 한 늘 머물러 있고 시간이 흐를수록 의미는 깊어지고 진해져요. 글을 읽는 것은 제게 배움을 주고 글을 쓰는 것은 제게 깨달음을 주기도 해요. 글을 쓰며 얻은 새로운 생각과 감정은 살아가야 할 이유에 보탬이 되고 그런 것들로 다시 글을 쓰고 있어요.</pre>
+
+                        <div class="txt__wrapper">
+                            <span class="txt__title">맺음말</span>
+                        </div>
+                        <pre class="txt__Box">2020년에 남긴 제 흔적들을 읽어주셔서 감사하다는 말 드리고 싶어요. 제 글을 읽고 어떤 것들을 느꼈을지 알 수 없겠지만 무엇이든 제게는 모두 감사한 것들이라 생각합니다. 그리고, 제가 사랑해오고 있는 [지은]의 2020년이 당신의 2021년에 따뜻한 보탬이 됐으면 좋겠습니다.</pre>
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

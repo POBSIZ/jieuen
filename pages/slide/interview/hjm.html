@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,  viewport-fit=cover" />
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="./data/web.js"></script>
+
+    <!-- Google web font loader &&  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <!-- Jquery CDN -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <!-- Slick CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+    <title>JIEUN-Asphalt</title>
+</head>
+
+<body>
+
+    <script>
+        WebFont.load({
+            google: {
+            families: ['Nanum Myeongjo']
+            }
+        });
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <a href="../../../index.html">
+                <h1 class="h1_title">황지민</h1>
+            </a>
+            
+            <a href="www.instagram.com/modem_poetry"">
+                <div class="sns"></div>
+            </a>
+
+            <div class="menuBtn" onclick="menuOpen();">둘러보기</div>
+            <div class="menu">
+                <div class="menu__tab">
+                    <ul class="menu__tab_list">
+                        <li class="menu__tab_list-itm" onclick="menuExit();" style="text-align: center; padding-left: 0;">X</li>
+                        <hr class="list-itm--divLine">
+
+                        <a href="">                            
+                            <li class="menu__tab_list-itm">처음</li>
+                            <hr class="list-itm--divLine">
+                        </a>
+
+                        <li class="menu__tab_list-itm" id="menu__tab_list-itm--cartegory">
+                            지은이들<span class="dropArrow"></span>
+                            <a href="./kmj.html"><div id="texFirst" class="itm--subList--itm">구민지</div></a>
+                            <a href="./ksk.html"><div class="itm--subList--itm">김상경</div></a>
+                            <a href="./kjd.html"><div class="itm--subList--itm">김정도</div></a>
+                            <a href="./kty.html"><div class="itm--subList--itm">김태연</div></a>
+                            <a href="./khy.html"><div class="itm--subList--itm">김해인</div></a>
+                            <a href="./nfm.html"><div class="itm--subList--itm">나필모</div></a>
+                            <a href="./psh.html"><div class="itm--subList--itm">박성환</div></a>
+                            <a href="./pek.html"><div class="itm--subList--itm">박은경</div></a>
+                            <a href="./pjh.html"><div class="itm--subList--itm">박진현</div></a>
+                            <a href="./smt.html"><div class="itm--subList--itm">서미태</div></a>
+                            <a href="./sjs.html"><div class="itm--subList--itm">서재승</div></a>
+                            <a href="./ywb.html"><div class="itm--subList--itm">여우비</div></a>
+                            <a href="./ljw.html"><div class="itm--subList--itm">이지원</div></a>
+                            <a href="./iyk.html"><div class="itm--subList--itm">임유경</div></a>
+                            <a href="./jjm.html"><div class="itm--subList--itm">장지명</div></a>
+                            <a href="./jsy.html"><div class="itm--subList--itm">정세인</div></a>
+                            <a href="./jy.html"><div class="itm--subList--itm">조양</div></a>
+                            <a href="./cjw.html"><div class="itm--subList--itm">최종욱</div></a>
+                            <a href="./hjm.html"><div class="itm--subList--itm">황지민</div></a>
+                        </li>
+                        <hr class="list-itm--divLine">
+                    </ul>
+                </div>
+                <div class="menu__blank" onclick="menuExit();"></div>
+            </div>
+            
+        </div>
+        
+        <div class="background">
+            <div class="slider slider-nav">
+    
+                <div class="itm__wrapper">
+                    <div class="itm">
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 하나.</span><br><br>
+                            <span class="txt__author"> 당신을 소개해주세요.</span>
+                        </div>
+                        <pre class="txt__Box">엉뚱하고 몽상가 기질을 가졌으며, 때때로 기발한 아이디어를 낼 수 있는 잠재력을 가졌고, 소심하지만 외향적인 사람입니다.</pre>
+                        
+                        <div class="txt__wrapper">
+                            <span class="txt__title"> 물음 둘. </span><br><br>
+                            <span class="txt__author"> 주로 어디서 영감을 받으시나요?</span>
+                        </div>
+                        
+                        <pre class="txt__Box"> 집으로 가는 버스 안, 지인과 만난 카페, 이야기의 주제, 과거의 기억 등 여러 가지 방면에서 글의 주제를 찾습니다. 이렇게 글의 주제를 찾으면 어떤 방식으로 글을 쓰고 표현할지 감이 잡힙니다. 또한, 글의 주제를 주변에서 찾게 된다면 독자층이 공감과 이해를 잘할 수 있습니다. 독자층이 공감과 이해를 잘한다면 글의 영감을 잘 찾았다고 생각합니다. 글의 주제, 영감을 찾는 방법은 여러 방법이 있지만, 저는 글을 쓸 때 제 주변에서 영감을 얻으려고 합니다. 글의 영감이 떠오르지 않을 때에는, 잠시 글 쓰는 것을 중단하고 여러 경험을 해보려고 합니다. 글의 영감은 결국 경험에서 나오는 것으로 생각하기에, 다양한 경험을 느끼고 그를 통해 글을 쓰는 것이 영감을 잘 받는 것이라 생각합니다.</pre>
+
+                        <div class="txt__wrapper">
+                            <span class="txt__title">물음 셋. </span><br><br>
+                            <span class="txt__author">왜 글을 쓰시나요?</span>
+                        </div>
+                        <pre class="txt__Box">제가 경험한 사건들이 저 하나에만 미치는 사건이라면 개인적인 서사에 불과하지만, 이를 나눈다면 다른 이들에게는 사건의 예방이 될 수도 있다 생각합니다. 제가 겪어온 삶이 개별적으로는 특별하다고 느끼는 사건들이 많지만, 그 특별한 경험은 제 삶의 형태가 변해가는 과정에서 만들어지는 경험입니다. 그것이 과대 해석되어 변해가는 과정에서 방해요소가 되지 않도록 글로 덜어내는 연습을 합니다. 다시 말해, 그림자 역할을 대신하는 것입니다. 제가 그림자 역할을 대신하는 것은 이러한 이유에서 파생된 의도라는 것을 말하고 싶습니다. 제 삶의 모습과 저라는 사람이 계속해서 성장해 가는 과정을 담담히 적고, 제 글을 읽어주시는 모든 분께 어떤 방법으로든 긍정적인 효과를 내었으면 하는 마음에 글을 씁니다.</pre>
+
+                        <div class="txt__wrapper">
+                            <span class="txt__title">맺음말</span>
+                        </div>
+                        <pre class="txt__Box">제가 글을 쓰기 시작할 때는 단순 호기심이었습니다. 글을 써보자는 마음으로 썼을 때는 좀처럼 마음에 들지 않아 계속 퇴고만 했던 기억이 납니다. 저는 사람들과 말하고 듣는 것을 굉장히 좋아합니다. 글도 이와 같은 이유로 좋아합니다. 사람들과 이야기할 수 있는 또 다른 방법이 되고, 숨겨놓은 뜻을 찾는 것이 재미있습니다. 제게 글은 과시용이 아닙니다. 어설픈 조언이나 충고도 하고 싶지 않습니다. 그저 누군가가 실제로 어려운 상황에 부닥쳤을 때, 제 글이 조금이나마 도움이 되었으면 하는 마음에 글을 씁니다.</pre>
+                    </div>
+                    <div class="itm__shadow"></div>
+                </div>
+    
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
