@@ -63,6 +63,7 @@ pre{
     height: 50px;
     font-size: 20px;
     font-weight: bold;
+    color: rgba(235, 235, 235);
 }
 
 .menu{
@@ -237,7 +238,7 @@ pre{
     font-weight: 900;
     font-size: 250% !important; 
     padding-top: 18px !important;
-    color: #000000;
+    color: rgb(235, 235, 235);
 }
 
 .header{
