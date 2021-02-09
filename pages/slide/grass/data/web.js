@@ -123,7 +123,7 @@ var web = {
     },
     
     w6:{
-        title:"<바다가 되어>",
+        title:"바다가 되어",
         author: "박진현",
         text:
 `

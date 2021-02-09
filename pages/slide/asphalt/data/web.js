@@ -138,7 +138,7 @@ var web = {
     },
     
     w5:{
-        title:"<눈의 말>",
+        title:"눈의 말",
         author: "박진현",
         text:
 `
