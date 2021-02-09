@@ -21,7 +21,7 @@ var menuNum = 0;
 var menuEvent =()=>{
   cartegory.addEventListener('click', function(){
     if (menuNum == 0) {
-      cartegory.setAttribute('style', 'padding-bottom: 100%; transition: .3s;');
+      cartegory.setAttribute('style', 'padding-bottom: 200px; transition: .3s;');
       dropArrow.setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
       menuNum ++;
     }else{
