@@ -99,6 +99,7 @@ pre{
     background-color: #ffffff;
     transition: .3s;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 

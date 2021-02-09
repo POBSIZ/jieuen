@@ -15,7 +15,7 @@ var menuOpen = () => {
   menuBlank.setAttribute('style', 'right: 70%; opacity: 70%; z-index: 20; transition: .5s;');
 }
 
-var dropArrowL = document.getElementsByClassName('dropArrow')[1];
+var dropArrowL = document.getElementsByClassName('dropArrow')[0];
 var cartegoryL = document.querySelector("#menu__tab_list-itm--cartegory\\ line");
 var menuNumLine = 0;
 var menuEventL =()=>{
@@ -32,13 +32,13 @@ var menuEventL =()=>{
   });
 }
 
-var dropArrow = document.getElementsByClassName('dropArrow')[0];
+var dropArrow = document.getElementsByClassName('dropArrow')[1];
 var cartegory = document.querySelector('#menu__tab_list-itm--cartegory');
 var menuNum = 0;
 var menuEvent =()=>{
   cartegory.addEventListener('click', function(){
     if (menuNum == 0) {
-      cartegory.setAttribute('style', 'padding-bottom: 500%; transition: .3s;');
+      cartegory.setAttribute('style', 'padding-bottom: 1000px; transition: .3s;');
       dropArrow.setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
       menuNum ++;
     }else{
