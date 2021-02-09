@@ -47,11 +47,11 @@ var commentNum = 0;
 var commentEvent =(i)=>{
   commentClick[i].addEventListener('click', function(){
     if (commentNum == 0) {
-      commentClick[i].setAttribute('style', 'padding-bottom: 130%; transition: .3s;');
+      commentClick[i].setAttribute('style', 'height: auto; transition: .3s;');
       commentArrow[i].setAttribute('style', 'transform: rotate(0deg); transition: .3s;');
       commentNum ++;
     }else{
-      commentClick[i].setAttribute('style', 'padding-bottom: 15px; transition: .3s;');
+      commentClick[i].setAttribute('style', 'height: 20px; transition: .3s;');
       commentArrow[i].setAttribute('style', 'transform: rotate(90deg); transition: .3s;');
       commentNum --;
     }
